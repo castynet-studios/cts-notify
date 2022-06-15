@@ -8,7 +8,7 @@
     "url": "https://github.com/castynet-studios/cts-notify"
   },
   "version": "0.0.11",
-  "description": "This is a react library for remake",
+  "description": "This is a simple notification library for react",
   "scripts": {
     "prepublish": "rm -rf dist && npm run rollup",
     "rollup": "rollup -c",
