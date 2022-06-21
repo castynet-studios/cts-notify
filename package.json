@@ -62,7 +62,8 @@
   },
   "peerDependencies": {
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "@styled-icons/boxicons-solid": "^10.38.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

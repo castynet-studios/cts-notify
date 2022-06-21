@@ -1,17 +1,43 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import Button from './notify';
+import CTSNotify from './notify';
+
+import { AvailableIcons } from './icons';
 
 export default {
   title: 'CTS-NOTIFY/Notify',
-  component: Button
-} as ComponentMeta<typeof Button>;
+  component: CTSNotify
+} as ComponentMeta<typeof CTSNotify>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof CTSNotify> = (args) => (
+  <CTSNotify {...args} />
+);
 
-export const Default = Template.bind({});
+export const Info = Template.bind({});
+export const Success = Template.bind({});
+export const Error = Template.bind({});
+export const Warning = Template.bind({});
 
-Default.args = {
-  type: 'primary',
-  children: "I'm a button 😎"
+Info.args = {
+  type: 'info',
+  message: 'This is a default message.',
+  icon: AvailableIcons.InfoSquare
+};
+
+Success.args = {
+  type: 'success',
+  message: 'This is a success message.',
+  icon: AvailableIcons.CheckShield
+};
+
+Error.args = {
+  type: 'error',
+  message: 'This is an error message.',
+  icon: AvailableIcons.Error
+};
+
+Warning.args = {
+  type: 'warning',
+  message: 'This is a warning message.',
+  icon: AvailableIcons.ErrorAlt
 };
