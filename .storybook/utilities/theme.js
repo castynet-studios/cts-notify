@@ -9,17 +9,14 @@ export default create({
   brandImage: CastynetLogo,
   brandTarget: '_self',
 
-  colorPrimary: 'hotpink',
+  colorPrimary: '#1f2762',
   colorSecondary: 'deepskyblue',
 
-  // Toolbar default and active colors
-  barTextColor: 'silver',
-  barSelectedColor: 'black',
-  barBg: 'hotpink',
+  barTextColor: 'white',
+  barSelectedColor: '#ff1493',
+  barBg: '#1f2762',
 
-  // Form colors
   inputBg: 'white',
-  inputBorder: 'silver',
   inputTextColor: 'black',
-  inputBorderRadius: 4
+  inputBorderRadius: 3
 });

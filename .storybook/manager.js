@@ -1,7 +1,7 @@
 import { addons } from '@storybook/addons';
 import theme from './utilities/theme';
 
-import favicon from './assets/favicon.ico';
+import favicon from './utilities/favicon.png';
 
 const link = document.createElement('link');
 link.setAttribute('rel', 'shortcut icon');
